@@ -28,7 +28,7 @@ const Block = (props) => {
 
 
     return (
-        <Col xs={rowSpan} className={`m-1 p-2 custom-brd-radius bg-custom-${color} text-center ${bold ? 'fw-bold' : ''}`}>
+        <Col xs={rowSpan} className={`m-1 p-2 custom-brd-radius bg-custom-${color} text-center ${bold ? 'fw-bold' : ''} ${isSeperate ? 'custom-width' : ''}`}>
             {isSeperate ? getSeperatedValues() : value}
         </Col>
     );
