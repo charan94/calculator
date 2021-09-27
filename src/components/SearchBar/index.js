@@ -6,13 +6,11 @@ import Col from 'react-bootstrap/Col';
 
 const SearchBar = (props) => {
 
-    const { } = props;
-
     return (
-        <div className="search">
+        <div className="container-fluid search">
             <Row className="mt-2">
                 <Col xs={6}>
-                    <img src={RevertImg} className="revert float-start" />
+                    <img alt="revert-btn" src={RevertImg} className="revert float-start" />
                 </Col>
                 <Col xs={6}>
                     <p className="color-custom-gray float-end mb-0 small fw-500">Ans = 96</p>

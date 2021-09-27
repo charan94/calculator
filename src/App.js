@@ -1,25 +1,30 @@
 import './App.scss';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Block from './components/Block';
 import SearchBar from './components/SearchBar';
+import CalcBlocks from './components/CalcBlocks';
 
 function App() {
+  // return (
+  //   <Container className="p-5">
+  //     <Col xs={12}>
+  //       <Row>
+  //         <SearchBar />
+  //       </Row>
+  //     </Col>
+  //     <Col xs={6}>
+  //       <CalcBlocks />
+  //     </Col>
+  //     <Col xs={6}>
+
+  //     </Col>
+  //   </Container>
+  // );
   return (
-    <Container className="p-5">
-      <Col xs={6}>
-        <Row>
-          <SearchBar />
-        </Row>
-        <Row>
-          <Col xs={2} className="m-2">
-            <Block value="2" dark span={3} />
-          </Col>
-        </Row>
-      </Col>
+    <Container className="mt-5">
+      <SearchBar />
+      <CalcBlocks />
     </Container>
-  );
+  )
 }
 
 export default App;

@@ -2,11 +2,11 @@ import Button from 'react-bootstrap/Button';
 import './CalcBtn.scss';
 
 const CalcBtn = (props) => {
-    const { value, seperator, value2 } = props;
+    const { children } = props;
 
     return (
         <Button variant="transparent">
-            {value}
+            {children}
         </Button>
     )
 }

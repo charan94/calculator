@@ -7,7 +7,7 @@
 }
 
 .btn:focus {
-  box-shadow:0 0 0 1px #000 !important;
+  box-shadow:0 0 0 1px #202124 !important;
 }
 
 .color-custom-gray {
@@ -20,4 +20,8 @@
 
 .fw-500 {
   font-weight: 500 !important;
+}
+
+.custom-border-start {
+  border-left: 1px solid #70757a !important;
 }
