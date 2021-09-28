@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const Block = (props) => {
-    const { value, seperate, gray, value2, span, primary, bold } = props;
+    const { value, seperate, gray, value2, span, primary, bold, sup } = props;
 
     const getSeperatedValues = () => {
         return (
@@ -28,8 +28,9 @@ const Block = (props) => {
 
 
     return (
-        <Col xs={rowSpan} className={`m-1 p-2 custom-brd-radius bg-custom-${color} text-center ${bold ? 'fw-bold' : ''} ${isSeperate ? 'custom-width' : ''}`}>
+        <Col xs={rowSpan} className={`block m-1 p-2 custom-brd-radius bg-custom-${color} text-center ${bold ? 'fw-bold' : ''} ${isSeperate ? 'custom-width' : ''}`}>
             {isSeperate ? getSeperatedValues() : value}
+            {sup ? (<sup>{sup}</sup>) : null}
         </Col>
     );
 }

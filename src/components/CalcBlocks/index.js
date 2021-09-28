@@ -32,7 +32,7 @@ const CalcBlocks = (props) => {
                     <Row className="flex-nowrap">
                         <Block value="Ans" gray span="4" />
                         <Block value="EXP" gray span="4" />
-                        <Block value="X" gray span="4" />
+                        <Block value="x" gray span="4" sup="y" />
                     </Row>
                 </Col>
                 <Col xs={6} className="mx-4">
@@ -40,7 +40,7 @@ const CalcBlocks = (props) => {
                         <Block value="(" gray span="3" />
                         <Block value=")" gray span="3" />
                         <Block value="%" gray span="3" />
-                        <Block value="AC" gray span="3" />
+                        <Block value="CE" gray span="3" />
                     </Row>
                     <Row className="flex-nowrap">
                         <Block value="7" span="3" />
